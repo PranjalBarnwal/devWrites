@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+
+.register_container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #A8BCFF;
+    align-items: center;
+    justify-content: center;
+}
+.register{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px 55px;
+}
+
+.register_name,.register_text{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.register_name{
+font-family:'Josefin Sans', sans-serif;
+font-size: 1.5rem;
+}
+
+.register_text{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.register_details{
+    display: flex;
+    flex-direction: column;
+}
+.register_details>input{
+    padding: 1rem;
+    background: transparent;
+    /* outline: none; */
+    border: none;
+}
