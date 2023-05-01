@@ -13,11 +13,13 @@ const Register = () => {
         <input type="password" placeholder='password'/>
       </div>
       <div className='add_avatar'>
+        <label htmlFor="file">
         <img src={addAvatar} alt="" />
+        </label>
         <a href="">Add an avatar</a>
       </div>
       <button className="signup">Sign Up</button>
-      <div>Already have an account? <a href="">Login</a></div>
+      <div className='already_acc'>Already have an account? <a href="">Login</a></div>
     </div>
     </div>
   )

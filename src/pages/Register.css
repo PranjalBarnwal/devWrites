@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
 
 
 .register_container{
@@ -22,6 +25,8 @@
 .register_name{
 font-family:'Josefin Sans', sans-serif;
 font-size: 1.5rem;
+color: #83a0ff;
+font-weight: 600;
 }
 
 .register_text{
@@ -34,7 +39,46 @@ font-size: 1.5rem;
 }
 .register_details>input{
     padding: 1rem;
+    outline: 0;
     background: transparent;
-    /* outline: none; */
     border: none;
+    border-bottom: 1.5px solid rgb(233, 236, 240);
+}
+.register_details>input:focus{
+    border-bottom: 1.5px solid rgb(160, 152, 152);
+}
+
+.add_avatar{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+.add_avatar a{
+    text-decoration: none;
+    font-family: "Josefin Sans";
+    font-size: 0.9rem;
+    color: #A8BCFF;
+}
+.add_avatar img{
+    width: 2.5rem;
+    
+    margin: 0.3rem;
+}
+.signup{
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 2rem;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    color: aliceblue;
+    background-color: #83a0ff;
+    border: none;
+}
+
+.already_acc{
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 1rem;
 }
