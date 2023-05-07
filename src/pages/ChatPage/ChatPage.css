@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap");
+
 .chatpage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   background-color: #a8bcff;
+  font-family: "Josefin Sans";
 }
 .chatpage-container {
   display: grid;
@@ -16,30 +19,173 @@
     "usercontrol chatnav chatnav"
     "chatlist chatsection chatsection"
     "chatlist messagecontrol messagecontrol";
-  min-height: 70vh;
-  min-width: 60vw;
+ height: 33rem;
+  width: clamp(35rem, 50rem, 65rem);
+  border-radius: 10px;
 }
-.chatlist {
-  grid-area: chatlist;
-  background: blue;
+.usercontrol {
+  padding: 5px;
+  color: white;
+  grid-area: usercontrol;
+  background: rgb(27, 37, 70);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.usercontrol ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.usercontrol ul li {
+  list-style: none;
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 3px;
 }
 
-.usercontrol {
-  grid-area: usercontrol;
-  background: red;
+.usercontrol ul button{
+  background: rgb(148, 148, 223);
+  border: none;
+padding: 2px;
+color: white;
+font-family: "Josefin Sans";
+}
+
+
+.chatlist {
+  overflow-y: scroll;
+  grid-area: chatlist;
+  background: rgb(36, 59, 134);
+  /* background: blue; */
+}
+.chatlist input:focus{
+  outline: none;
+  border: none;
+}
+.chatlist input{
+width: 100%;
+height: 30px;
+border: none;
+padding: 8px;
+color: aliceblue;
+background: rgb(36, 59, 134);
+}
+
+.chatlist input::placeholder{
+  color: aliceblue;
 }
 
 .chatnav {
   grid-area: chatnav;
-  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(100, 78, 129);
 }
 
+.chatnav ul *{
+  margin: 0px 8px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.chatnav p{
+  margin-left: 10px;
+  color: aliceblue;
+}
 .chatsection {
   grid-area: chatsection;
-  background: yellow;
+  background: rgb(235, 218, 241);
+}
+
+.messagecontrol input[type="text"]{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  
 }
 
 .messagecontrol {
   grid-area: messagecontrol;
-  background: purple;
+  background: aliceblue;
+  display: flex;
+  
+}
+
+.messagecontrol ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messagecontrol ul *{
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+.messagecontrol ul button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  font-size: 1.3rem;
+  background-color: #a8bcff;
+  border: none;
+}
+
+.messagecontrol input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.messagecontrol input:focus{
+  border-top: 1px solid rgb(197, 156, 197);
+  border-bottom: 1px solid rgb(197, 156, 197);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track{
+
+  /* border: 1px solid rgb(27, 26, 26); */
+background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255,0.6);
+  border-radius: 15px
+
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+background: rgb(47, 47, 48);
 }

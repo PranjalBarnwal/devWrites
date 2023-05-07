@@ -1,0 +1,42 @@
+.contact-wrapper {
+  height: 13%;
+  padding: 5px;
+  /* background-color: antiquewhite; */
+  display: flex;
+}
+
+.contact-wrapper:hover{
+    cursor: pointer;
+}
+
+.contact-dp {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.contact-info {
+    padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info p:nth-child(1){
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+.contact-info p:nth-child(2){
+    font-size: 0.8rem;
+    color: rgb(190, 204, 216);
+}
+
+img {
+  width: 100%;
+}
