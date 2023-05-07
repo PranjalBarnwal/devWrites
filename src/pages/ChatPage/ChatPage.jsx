@@ -10,6 +10,8 @@ import { AiOutlineSend } from "react-icons/ai";
 
 import "./ChatPage.css";
 import Contacts from "./Contacts";
+import Received from "./Received";
+import Sent from "./Sent";
 const ChatPage = () => {
   return (
     <div className="chatpage">
@@ -43,6 +45,11 @@ const ChatPage = () => {
           </ul>
         </div>
         <div className="chatsection">
+          <Received/>
+          <Sent/>
+          <Received/>
+   
+          
         </div>
         <div className="messagecontrol">
 

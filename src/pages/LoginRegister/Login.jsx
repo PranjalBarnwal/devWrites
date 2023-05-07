@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Register.css";
 import { AiFillEye } from "react-icons/ai";
 import { AiFillEyeInvisible } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -38,7 +39,7 @@ const Login = () => {
           <button className="signup">Sign In</button>
         </form>
         <div className="already_acc">
-          Don't have an account? <a href="">Register</a>
+          {/* Don't have an account? <Link to="/">Register</Link> */}
         </div>
       </div>
     </div>

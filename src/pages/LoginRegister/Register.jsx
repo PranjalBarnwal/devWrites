@@ -3,6 +3,7 @@ import "./Register.css";
 import { AiFillEye } from "react-icons/ai";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import addAvatar from "./../../img/addAvatar.png";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const fileInputRef = useRef(null);
@@ -62,7 +63,7 @@ const Register = () => {
           </label>
         </form>
         <div className="already_acc">
-          Already have an account? <a href="">Login</a>
+          {/* Already have an account? <Link to="/login">Login</Link> */}
         </div>
       </div>
     </div>

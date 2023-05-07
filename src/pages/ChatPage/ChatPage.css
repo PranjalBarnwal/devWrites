@@ -99,6 +99,7 @@ background: rgb(36, 59, 134);
 .chatsection {
   grid-area: chatsection;
   background: rgb(235, 218, 241);
+  overflow-y: scroll;
 }
 
 .messagecontrol input[type="text"]{
