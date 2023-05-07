@@ -7,9 +7,10 @@ import ChatPage from "./pages/ChatPage/ChatPage";
 
 function App() {
   return <>
-<div className="App-main"><ChatPage/></div>
-{/* <div className="App-main"><Login/></div> */}
+<div className="App-main"><Login/></div>
+<div className="App-main"><Register/></div>
 
+<div className="App-main"><ChatPage/></div>
 
   </>;
 }
