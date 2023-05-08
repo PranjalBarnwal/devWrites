@@ -1,6 +1,6 @@
 .received-parent {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   
   padding: 10px;
 }
@@ -26,6 +26,7 @@
 .received-dp {
 
   display: flex;
+  
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
@@ -42,18 +43,27 @@
   flex-direction: column;
 }
 
-.sent-wrapper{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 80%;
-    padding: 10px;
-  }
+.sent-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.sentdp-time{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+}
 
 .sent-text p {
-    width: 100%;
-    background-color: rgb(255, 216, 165);
+  
+    background-color: rgb(107, 238, 174);
     border-radius: 20px 0px 20px 20px;
     display: flex;
     padding: 5px;
     align-items: center;
   }
+
