@@ -36,10 +36,10 @@ const Login = () => {
             </div>
           </div>
 
-          <button className="signup">Sign In</button>
+          <button className="signup"><Link to="/chat">Sign In</Link></button>
         </form>
         <div className="already_acc">
-          {/* Don't have an account? <Link to="/">Register</Link> */}
+          Don't have an account? <Link to="/">Register</Link>
         </div>
       </div>
     </div>
